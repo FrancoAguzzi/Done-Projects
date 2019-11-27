@@ -1,0 +1,446 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: 6vh;
+  background-color: #fff;
+}
+.infusion-logo {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(48, 175, 133);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+.infusion-logo:hover {
+  cursor: pointer;
+}
+.burger-menu {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+.div-burger {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.opened {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  background: #333;
+}
+.navegacao li:first-of-type {
+  height: 65.75px;
+}
+.navegacao li {
+  width: 100%;
+  height: calc((100% - 65.75px) / 6);
+  color: rgba(255, 255, 255, 0.712);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navegacao li:first-child {
+  justify-content: flex-end;
+}
+.navegacao li:hover {
+  color: #fff;
+  transition: color 0.7s;
+}
+.burger-btn {
+  display: none;
+}
+.white-burger {
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+.menu-subprincipal {
+  height: 60vh;
+  position: relative;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(/images/01.jpg);
+  background-size: 100% 100%;
+}
+.menu-subprincipal h1 {
+  background-color: #63c6ae;
+  text-transform: uppercase;
+  width: 80%;
+  text-align: center;
+  padding: 30px 15px;
+  margin: 0;
+}
+.menu-subprincipal p {
+  background-color: #333;
+  width: 70%;
+  text-align: center;
+  padding: 15px 20px;
+  margin: 10px 0 30px 0;
+}
+.buy-btn {
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.678);
+  outline: none;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.267);
+  padding: 15px 25px;
+  transition: background-color 0.5s;
+}
+.buy-btn:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+.arrow-up {
+  position: absolute;
+  bottom: 0;
+}
+.conteudo-principal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.perfil {
+  width: 90%;
+  border: 1px solid rgba(128, 128, 128, 0.507);
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.perfil:hover {
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.card-perfil {
+  width: 100%;
+}
+.perfil h2 {
+  width: 90%;
+  color: rgba(109, 106, 106, 0.856);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: start;
+  margin-bottom: 0;
+  margin-top: 20%;
+}
+.perfil p {
+  width: 90%;
+  color: rgba(109, 106, 106, 0.856);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin-bottom: 3em;
+  letter-spacing: 1.2px;
+}
+.perfil:hover {
+  outline: 5px solid #63c6ae;
+  outline-offset: -5px;
+}
+.perfil:hover .avatar img {
+  transform: translateY(-50%);
+}
+.perfil:hover h2 {
+  color: #63c6ae;
+}
+.perfil:hover p {
+  color: #63c6ae;
+}
+.perfil-1 {
+  margin-top: 6em;
+}
+.perfil-4 {
+  margin-bottom: 3em;
+}
+.avatar {
+  box-sizing: border-box;
+  width: 166px;
+  height: 166px;
+  border-radius: 50%;
+  margin: -13%;
+  overflow: hidden;
+}
+.avatar img {
+  width: 100%;
+}
+.conteudo-secundario {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.082);
+  border-top: 1px solid rgba(128, 128, 128, 0.507);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.conteudo-secundario h3 {
+  width: 90%;
+  color: rgba(109, 106, 106, 0.856);
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-top: 3em;
+}
+.conteudo-secundario p {
+  color: rgba(109, 106, 106, 0.692);
+  letter-spacing: 1.2px;
+  margin-bottom: 2em;
+}
+.artigo-1,
+.artigo-2 {
+  width: 90%;
+}
+.artigo-2 {
+  margin-bottom: 4em;
+}
+.conteudo-secundario-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.conteudo-secundario-btn1,
+.conteudo-secundario-btn2 {
+  padding: 1em 2em;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+.conteudo-secundario-btn1 {
+  background-color: rgb(48, 175, 133);
+  transition: background-color 0.5s;
+}
+.conteudo-secundario-btn2 {
+  background-color: #333;
+  transition: background-color 0.5s;
+}
+.conteudo-secundario-btn1:hover {
+  background: rgba(48, 175, 133, 0.65);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.conteudo-secundario-btn2:hover {
+  background: rgba(51, 51, 51, 0.65);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.h2-chato {
+  margin: 0;
+  padding: 30px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: rgb(48, 175, 133);
+}
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.card {
+  width: 100%;
+  transition: opacity 0.5s;
+}
+.card img {
+  display: block;
+  width: 100%;
+}
+.card:hover {
+  opacity: 0.75;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+footer {
+  width: 100%;
+  background-color: #333;
+  color: rgba(128, 128, 128, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer p {
+  width: 90%;
+}
+footer p:first-child {
+  margin-top: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+footer p:last-of-type {
+  letter-spacing: 1.2px;
+  margin-bottom: 2em;
+}
+.footer-links {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+footer a {
+  text-decoration: none;
+  color: rgba(128, 128, 128, 0.6);
+  margin-bottom: 15px;
+}
+.carousel-images {
+  height: 70vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-image {
+  width: 75%;
+  cursor: pointer;
+}
+.right-images,
+.left-images {
+  cursor: pointer;
+}
+.carousel-textos {
+  background-color: #63c6ae;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid #399981;
+}
+.carousel-textos-content {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-texts {
+  position: absolute;
+  right: 120px;
+}
+.left-texts {
+  position: absolute;
+  left: 120px;
+}
+blockquote {
+  color: white;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0;
+  margin: 0 30px;
+}
+.carousel-textos-content img {
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .slider img {
+    width: 50%;
+  }
+  .conteudo-secundario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .artigo-1 h3 {
+    margin-top: 5em;
+  }
+  .artigo-1 {
+    margin-bottom: 4em;
+  }
+  .artigo-1,
+  .artigo-2 {
+    width: 40%;
+  }
+  .div-burger {
+    pointer-events: none;
+  }
+  .div-burger,
+  .navegacao li img {
+    display: none;
+  }
+  .burger-menu {
+    width: 80%;
+  }
+  .infusion-logo {
+    width: 20%;
+  }
+  .navegacao {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 0;
+  }
+  .navegacao li {
+    color: gray;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .navegacao li:hover {
+    color: #63c6ae;
+    cursor: pointer;
+  }
+  .conteudo-principal {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .perfil {
+    width: 22%;
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .perfil h2 {
+    margin-top: 25%;
+  }
+  .avatar {
+    width: 88px;
+    height: 88px;
+    margin: -20%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .cards {
+    grid-template-columns: repeat(6, minmax(150px, 1fr));
+  }
+}

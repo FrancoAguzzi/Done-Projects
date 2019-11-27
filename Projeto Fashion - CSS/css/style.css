@@ -1,0 +1,144 @@
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+nav {
+  width: 100%;
+  background-color: rgb(1, 19, 48);
+}
+.navegacao {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  list-style: none;
+  display: inline-block;
+}
+.navegacao li {
+  width: 25%;
+  height: 40px;
+  margin-left: auto;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  float: left;
+}
+.navegacao li a{
+  text-decoration: none;
+  color: rgb(66, 74, 95);
+}
+.navegacao li a:hover {
+  background: yellow;
+}
+.fashion-logo {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+.fashion-logo img {
+  padding-left: 30%;
+  padding-top: 5px;
+}
+.fashion-image {
+  width: 100%;
+  margin-top: ;
+}
+.artigo-1 {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  line-height: 25px;
+}
+.artigo-1 h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.modelos {
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.modelo-1,
+.modelo-2,
+.modelo-3 {
+  width: 32%;
+  margin: 0;
+  float: left;
+  margin-left: 2%;
+  text-align: center;
+}
+.modelo-1 {
+  margin-left: 0;
+}
+.modelo-1 h3,
+.modelo-2 h3,
+.modelo-3 h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 12px;
+}
+.modelo-1 p,
+.modelo-2 p,
+.modelo-3 p {
+  color: gray;
+}
+.modelos img {
+  width: 100%;
+}
+.banner {
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  background-image: url(/images/bg_detalhe.png);
+  background-size: 100% 100%;
+}
+.banner h1 {
+  color: rgb(228, 232, 240);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 120px;
+  padding-bottom: 0;
+  margin-bottom: 60px;
+  font-size: 55px;
+}
+.banner p {
+  margin: 0;
+  margin-left: 120px;
+  width: 45%;
+  color: rgb(228, 232, 240);
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.contato {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-style: none;
+    color: rgb(44, 44, 143);
+    font-size: 25px;
+}
+footer {
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    height: 80px;
+}
+.rodape {
+    width: 40%;
+    margin: 0 auto;
+    letter-spacing: 4px;
+    color: rgb(62, 110, 126);
+    line-height: 80px;
+    text-align: center;
+}
